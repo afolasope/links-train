@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1rem, 0.8rem + 0.5vw, 2rem);
+}
+.wrapper {
+  padding: 2rem 1rem 0 1rem;
+}
+header {
+  position: relative;
+}
+#slack{
+  display: none;
+}
+.img-container {
+  text-align: center;
+}
+.img-container img {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.share-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px dashed #d0d5dd;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  cursor: pointer;
+}
+.tablet-share {
+  display: none;
+}
