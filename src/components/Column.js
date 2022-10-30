@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Column = () => {
+const Column = ({ title, url }) => {
   return (
-    <div>Column</div>
-  )
-}
+    <div>
+      <button>
+        <a href={`${url}`} target="_blank" rel="noreferrer">
+          {title}
+        </a>
+      </button>
+    </div>
+  );
+};
 
-export default Column
+export default Column;

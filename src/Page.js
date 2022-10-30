@@ -1,13 +1,13 @@
 import React from 'react';
-import Column from './components/Column';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Links from './components/Links';
 
 const Page = () => {
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <Header />
-      <Column />
+      <Links />
       <Footer />
     </div>
   );
