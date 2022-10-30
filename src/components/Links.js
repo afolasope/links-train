@@ -31,7 +31,7 @@ const data = [
     id: 'pitch',
     link: 'background check for coders',
     url: 'https://backgroundcheck.zuri.team/',
-    desc: 'Tech talent hunt is a program where you get to test your tech skills and watch others do amazing works with their skills',
+    desc: 'Learn about the good, bad, and downright scary online activities of candidates and employees. Let us help you make better informed hiring decisions.',
   },
   {
     id: 'book_design',
@@ -48,7 +48,7 @@ const Links = () => {
         {data.map((item, index) => {
           return (
             <div key={index}>
-              <Column url={item.url} title={item.link} />
+              <Column url={item.url} title={item.link} desc={item.desc} />
             </div>
           );
         })}
