@@ -39,3 +39,11 @@ header {
 .tablet-share {
   display: none;
 }
+@media (min-width: 600px) {
+  .tablet-share {
+    display: block;
+  }
+  .mobile-share {
+    display: none;
+  }
+}
