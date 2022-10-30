@@ -55,7 +55,7 @@ header {
 
 /* Links */
 .links {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 3.5rem 1rem;
 }
 .link button {
   width: 100%;
@@ -71,11 +71,49 @@ header {
   border-radius: 6px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
+  font-weight: 600;
 }
 .link button a:hover {
   background-color: #d0d5dd;
+  transform: scale(1.01);
 }
 a {
   text-decoration: none;
   color: #101828;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.social-icons a {
+  margin-right: 1rem;
+}
+@media (min-width: 600px) {
+  .links {
+    padding: 4rem;
+  }
+}
+
+/* footer */
+footer {
+  padding-bottom: 2rem;
+}
+hr {
+  border: 0.0001rem dashed #d0d5dd;
+  margin-bottom: 2rem;
+}
+footer p {
+  margin: 1rem 0;
+  color: #667085;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 760px) {
+  footer {
+    padding: 2rem;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
 }
