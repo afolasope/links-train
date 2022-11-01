@@ -24,9 +24,44 @@ header {
 .img-container {
   text-align: center;
 }
-.img-container img {
+.img {
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 1.5rem;
+  position: relative;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+  object-fit: fill;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    rgba(52, 64, 84, 0.75),
+    rgba(52, 64, 84, 0.75)
+  );
+}
+.camera-icon {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transform: translateY(-150%);
+  align-items: center;
+}
+.camera-icon img {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 .share-icon {
   display: flex;
@@ -116,4 +151,8 @@ footer p {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.hidden{
+  display: none;
 }
