@@ -34,7 +34,7 @@ const data = [
     desc: 'Learn about the good, bad, and downright scary online activities of candidates and employees. Let us help you make better informed hiring decisions.',
   },
   {
-    id: 'book_design',
+    id: 'book__design',
     link: 'design books',
     desc: 'Get the best book money can get you on UI/UX.',
     url: 'https://books.zuri.team/design-rules',
@@ -48,7 +48,7 @@ const Links = () => {
         {data.map((item, index) => {
           return (
             <div key={index}>
-              <Column url={item.url} title={item.link} desc={item.desc} />
+              <Column url={item.url} title={item.link} desc={item.desc} id={id} />
             </div>
           );
         })}
