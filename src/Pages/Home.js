@@ -8,7 +8,6 @@ const Page = () => {
     <div className="wrapper">
       <Header />
       <Links />
-      <Footer />
     </div>
   );
 };
