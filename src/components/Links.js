@@ -45,7 +45,7 @@ const Links = () => {
   return (
     <div className="links">
       <>
-        {data.map((item, index) => {
+        {data.map((item, index, id) => {
           return (
             <div key={index}>
               <Column url={item.url} title={item.link} desc={item.desc} id={id} />
