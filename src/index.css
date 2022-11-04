@@ -1,5 +1,11 @@
 :root {
   --grey-pry: #eaecf0;
+  --text-color-pry: #475467;
+  --text-title-color: #475467;
+  --black: #101828;
+  --blue-pry: #1570ef;
+  --box-shadow:  0px 1px 2px rgba(16, 24, 40, 0.05);
+  --border: 1px solid #D0D5DD;
 }
 
 * {
@@ -11,6 +17,15 @@ html {
   font-family: 'Inter', sans-serif;
   font-size: clamp(1rem, 0.8rem + 0.5vw, 2rem);
 }
+p {
+  color: var(--text-color-pry);
+}
+button {
+  padding: 0.7rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
 .wrapper {
   padding: 2rem 1rem 0 1rem;
 }
@@ -39,7 +54,7 @@ header {
   margin: 0 auto;
   object-fit: fill;
 }
-.overlay{
+.overlay {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -153,8 +168,70 @@ footer p {
   }
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
 /* Contacts Page */
+.contact-wrapper {
+  padding: 2rem 1rem;
+}
+.contact-wrapper h1 {
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+.contact-header {
+  margin-bottom: 1.5rem;
+}
+.form-control {
+  /* border: 1px solid rebeccapurple; */
+  margin-bottom: 1.5rem;
+}
+.form-control label {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--text-title-color);
+}
+.form-control input {
+  display: block;
+  padding: 0.6rem;
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-size: inherit;
+}
+
+.textarea {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.textarea textarea {
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  width: 100%;
+  padding: 1rem;
+  font-size: inherit;
+  font-family: inherit;
+  resize: none;
+}
+.agreement {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+.agreement p {
+  font-size: 0.9rem;
+}
+.agreement input {
+  margin-right: 0.5rem;
+}
+.contact-submit {
+}
+.contact-submit button {
+  width: 100%;
+  background-color: var(--blue-pry);
+  color: white;
+  font-size: inherit;
+}
