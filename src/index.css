@@ -4,8 +4,8 @@
   --text-title-color: #475467;
   --black: #101828;
   --blue-pry: #1570ef;
-  --box-shadow:  0px 1px 2px rgba(16, 24, 40, 0.05);
-  --border: 1px solid #D0D5DD;
+  --box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  --border: 1px solid #d0d5dd;
 }
 
 * {
@@ -234,4 +234,22 @@ footer p {
   background-color: var(--blue-pry);
   color: white;
   font-size: inherit;
+}
+
+@media (min-width: 600px) {
+  .contact-wrapper {
+    padding: 2rem 4rem;
+  }
+  .names {
+    display: flex;
+    gap: 2rem;
+  }
+  .names .form-control {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .contact-wrapper {
+    padding: 2rem 10rem;
+  }
 }

@@ -8,13 +8,15 @@ const Contact = () => {
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
       </div>
       <form action="">
-        <div className="form-control">
-          <label htmlFor="firstName"> First Name</label>
-          <input type="text" placeholder="Enter your first name" />
-        </div>
-        <div className="form-control">
-          <label htmlFor="lastName"> Last Name</label>
-          <input type="text" placeholder="Enter your last name" />
+        <div className='names'>
+          <div className="form-control">
+            <label htmlFor="firstName"> First Name</label>
+            <input type="text" placeholder="Enter your first name" />
+          </div>
+          <div className="form-control">
+            <label htmlFor="lastName"> Last Name</label>
+            <input type="text" placeholder="Enter your last name" />
+          </div>
         </div>
         <div className="form-control">
           <label htmlFor="email" placeholder="Enter your first name">
