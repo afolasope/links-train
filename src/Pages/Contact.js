@@ -11,23 +11,23 @@ const Contact = () => {
         <div className='names'>
           <div className="form-control">
             <label htmlFor="firstName"> First Name</label>
-            <input type="text" placeholder="Enter your first name" />
+            <input type="text" placeholder="Enter your first name" id='first_name' />
           </div>
           <div className="form-control">
             <label htmlFor="lastName"> Last Name</label>
-            <input type="text" placeholder="Enter your last name" />
+            <input type="text" placeholder="Enter your last name" id='last_name' />
           </div>
         </div>
         <div className="form-control">
-          <label htmlFor="email" placeholder="Enter your first name">
+          <label htmlFor="email" placeholder="Enter your email">
             Email
           </label>
-          <input type="email" />
+          <input type="email" id='email' />
         </div>
         <div className="textarea">
           <textarea
-            name=""
-            id=""
+            name="message"
+            id="message"
             cols="30"
             rows="10"
             placeholder={`Send me a message and I'll reply you as soon as possible...`}
@@ -38,7 +38,7 @@ const Contact = () => {
           <p>You agree to providing your data to who may contact you.</p>
         </div>
         <div className="contact-submit">
-          <button type="submit">Send Message</button>
+          <button type="submit" id='btn__submit'>Send Message</button>
         </div>
       </form>
     </div>

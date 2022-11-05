@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { gitIcon, slackIcon } from '../assets';
 import Column from './Column';
 
@@ -48,10 +49,22 @@ const Links = () => {
         {data.map((item, index, id) => {
           return (
             <div key={index}>
-              <Column url={item.url} title={item.link} desc={item.desc} id={id} />
+              <Column
+                url={item.url}
+                title={item.link}
+                desc={item.desc}
+                id={id}
+              />
             </div>
           );
         })}
+        <Link to="/contact" id='contact'>
+          <div className="link-contact">
+            <button className='contact-btn'>
+              Contact Me
+            </button>
+          </div>
+        </Link>
         <div className="social-icons">
           <a href="https://slack.com/">
             <img src={slackIcon} alt="slack" />
