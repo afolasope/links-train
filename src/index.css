@@ -123,7 +123,8 @@ header {
   transition: all 0.3s ease-in-out;
   font-weight: 600;
 }
-.link button a:hover {
+.link button a:hover,
+.link-contact .contact-btn:hover {
   background-color: #d0d5dd;
   transform: scale(1.01);
 }
@@ -184,7 +185,6 @@ footer p {
   margin-bottom: 1.5rem;
 }
 .form-control {
-  /* border: 1px solid rebeccapurple; */
   margin-bottom: 1.5rem;
 }
 .form-control label {
@@ -227,7 +227,20 @@ footer p {
 .agreement input {
   margin-right: 0.5rem;
 }
-.contact-submit {
+.link-contact .contact-btn {
+  background-color: #475467;
+  width: 98%;
+  padding: 1.5rem;
+  display: block;
+  background-color: #eaecf0;
+  border-radius: 6px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+.link-contact {
+  display: flex;
+  justify-content: center;
 }
 .contact-submit button {
   width: 100%;
